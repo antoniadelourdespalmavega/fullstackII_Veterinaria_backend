@@ -18,9 +18,15 @@ Veterinaria San Marcos. Es el backend del proyecto React `Veterinaria_react`.
 
 | Qué | Dirección |
 |---|---|
-| API | http://localhost:8080 |
 | Swagger | http://localhost:8080/swagger-ui.html |
 | Consola de la base de datos | http://localhost:8080/h2-console (JDBC URL `jdbc:h2:file:./data/veterinaria`, usuario `sa`, sin contraseña) |
+! SENTENCIAS SQL ! 
+SELECT * FROM USUARIOS;
+SELECT * FROM CITAS;      
+SELECT * FROM FICHAS;   
+SELECT * FROM PEDIDOS;     
+SELECT * FROM PEDIDO_ITEMS;
+
 
 La primera vez que arranca, la clase `DataLoader` carga los datos iniciales (8 usuarios, 3 citas y 6 fichas). Las tablas son `USUARIOS`, `CITAS`, `FICHAS`, `PEDIDOS` y `PEDIDO_ITEMS`.
 Los usuarios de prueba están en el `README` del frontend. Para volver a empezar de cero, apagar el servidor y borrar la carpeta `data`.
